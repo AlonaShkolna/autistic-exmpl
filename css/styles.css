@@ -473,7 +473,7 @@ header {
     max-height: 300px;
   }
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 680px) {
   .gallery-block figure {
     max-height: 240px;
   }
@@ -488,7 +488,7 @@ header {
     max-height: 300px;
   }
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 680px) {
   .gallery-block figure img {
     max-height: 240px;
   }
