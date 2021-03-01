@@ -1,0 +1,653 @@
+* {
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.block {
+  padding: 0 15px;
+}
+
+.grid {
+  flex: 1;
+}
+.grid2 {
+  flex: 2;
+}
+
+.float-left {
+  float: left;
+}
+
+.clearfix::after, .clearfix::before {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+header {
+  background-image: url("../pic/header-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding-bottom: 287px;
+}
+
+.top-nav {
+  background: rgba(0, 0, 0, 0.15);
+}
+.top-nav h2 {
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 22px 60px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.top-nav h2 a:hover {
+  text-decoration: underline;
+}
+
+.menu-block {
+  padding: 28px 64px 28px 0;
+}
+.menu-block ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.menu-block-item {
+  margin-left: 30px;
+  letter-spacing: 0.7px;
+}
+.menu-block-item:hover a {
+  text-decoration: underline;
+}
+
+.header-content {
+  width: 50%;
+}
+.header-content h1 {
+  margin: 205px 0 62px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 200;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+.header-content form {
+  text-align: center;
+}
+
+.header-search {
+  position: relative;
+  display: inline-block;
+  padding-right: 28px;
+  text-align: center;
+  width: 428px;
+}
+.header-search input {
+  width: 100%;
+  padding: 16px 49px 16px 32px;
+  border-radius: 40px;
+}
+.header-search input::-webkit-input-placeholder {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.5px;
+}
+.header-search input:-moz-placeholder {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.5px;
+}
+.header-search input::-moz-placeholder {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.5px;
+}
+.header-search input:-ms-input-placeholder {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.5px;
+}
+.header-search .search-button {
+  position: absolute;
+  border-radius: 20px;
+  right: 38px;
+  bottom: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background: url("../pic/sprite.png") -10px -43px no-repeat;
+}
+.header-search .search-button:hover {
+  background: #eee url("../pic/sprite.png") -59px -43px no-repeat;
+}
+
+.search-content {
+  background: #f4f4f4;
+  padding: 72px 0 107px;
+}
+
+.filter-block {
+  padding-left: 47px;
+}
+.filter-block-data {
+  background: #fff;
+  border-radius: 40px;
+}
+.filter-block-guests {
+  position: relative;
+}
+.filter-block-guests input {
+  padding: 14px 70px 14px 20px;
+  border-radius: 40px;
+  max-width: 150px;
+}
+.filter-block-guests .guests-icon {
+  position: absolute;
+  display: inline-block;
+  width: 17px;
+  height: 15px;
+  background: url("../pic/sprite.png") -174px -2px no-repeat;
+  top: 13px;
+  right: 20px;
+}
+.filter-block input, .filter-block label {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #999;
+  text-transform: capitalize;
+}
+.filter-block input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #999;
+}
+.filter-block input:-moz-placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #999;
+}
+.filter-block input::-moz-placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #999;
+}
+.filter-block input:-ms-input-placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #999;
+}
+.filter-block button {
+  border: none;
+  background: #6f72f7;
+  text-transform: uppercase;
+  margin-right: 67px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  letter-spacing: 0.5px;
+  padding: 13px 33px;
+  border-radius: 40px;
+}
+.filter-block button:hover {
+  background: #0b0fc2;
+}
+
+.filter-data-item {
+  position: relative;
+  border-right: 1px solid #fdf8f9;
+  padding: 13px 20px;
+}
+.filter-data-item:last-child {
+  border-right: none;
+}
+.filter-data-item #destination {
+  padding-right: 29px;
+}
+.filter-data-item .destination-icon {
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  background: url("../pic/sprite.png") -142px -1px no-repeat;
+  top: 14px;
+  right: 29px;
+}
+.filter-data-item .date-input {
+  width: 115px;
+}
+.filter-data-item .date-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.filter-data-item .date-icon {
+  position: absolute;
+  display: inline-block;
+  width: 13px;
+  height: 14px;
+  background: url("../pic/sprite.png") -157px -1px no-repeat;
+  top: 17px;
+  right: 25px;
+}
+
+.gallery-block {
+  margin-top: 106px;
+  justify-content: space-around;
+}
+.gallery-block figure {
+  margin: 15px;
+  position: relative;
+  max-height: 360px;
+  background-color: #000;
+}
+.gallery-block figure:hover img {
+  opacity: 0.3;
+}
+.gallery-block figure:hover figcaption {
+  opacity: 1;
+}
+.gallery-block figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translatey(-50%);
+  opacity: 0;
+  text-align: center;
+}
+.gallery-block figcaption h4 {
+  margin: 0 0 30px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  padding: 0 55px;
+  line-height: 1.2;
+}
+.gallery-block figcaption .link-arrow {
+  display: inline-block;
+  width: 25px;
+  height: 19px;
+  background: url("../pic/sprite.png") -115px -47px no-repeat;
+}
+.gallery-block figcaption .link-arrow:hover {
+  transform: scale(1.2);
+}
+
+.new-offers h2 {
+  margin: 124px 0 85px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 200;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.new-offers-tabs {
+  margin-bottom: 87px;
+  text-align: center;
+}
+.new-offers-tabs button {
+  padding: 10px 84px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #c5c5c5;
+  background: transparent;
+  border-radius: 25px;
+  border: none;
+}
+.new-offers-tabs button:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+.new-offers-tabs .current {
+  background: #6f72f7;
+  color: #fff;
+}
+.new-offers-tabs .current:hover {
+  background: #6f72f7;
+  color: #fff;
+}
+.new-offers-gallery {
+  padding-bottom: 144px;
+}
+.new-offers .gallery-item {
+  width: 50%;
+  padding: 0 15px 61px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.new-offers .gallery-item img {
+  margin-right: 30px;
+}
+.new-offers .gallery-item h6 {
+  margin: 0 0 30px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #666666;
+}
+.new-offers .gallery-item h6:hover a {
+  text-decoration: underline;
+}
+.new-offers .gallery-item p {
+  color: #999999;
+}
+.new-offers .gallery-item .price {
+  display: block;
+  padding: 5px 0;
+  font-size: 24px;
+  color: #f76f8d;
+}
+
+.see-more-btn {
+  margin: 39px auto 0;
+  padding: 17px 95px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  background: #6f72f7;
+  border-radius: 40px;
+  border: none;
+}
+.see-more-btn:hover {
+  background: #0b0fc2;
+}
+
+.blogs {
+  padding-bottom: 150px;
+}
+.blogs h2 {
+  margin: 0 0 99px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 200;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+}
+.blogs .see-more-btn {
+  margin: 71px auto 0;
+}
+
+.blog-post {
+  width: 33%;
+  padding: 0 12px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.blog-post img {
+  width: 100%;
+}
+.blog-post-title {
+  padding: 15px 97px 4px 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.blog-post-title:hover {
+  text-decoration: underline;
+}
+.blog-post-date {
+  font-weight: 400;
+  color: #999;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.blog-post-date span {
+  display: inline-block;
+  margin-right: 10px;
+  width: 13px;
+  height: 14px;
+  background: url("../pic/sprite.png") -157px -1px no-repeat;
+  transform: scale(1.4);
+}
+
+.contact-us {
+  background: #43434f;
+  margin: 0 0 122px 0;
+  padding: 34px 0 104px 0;
+}
+.contact-us h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 200;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  margin-bottom: 66px;
+  letter-spacing: 1px;
+  padding-left: 6px;
+}
+.contact-us form {
+  padding-left: 14px;
+}
+
+.form-item {
+  text-align: center;
+  position: relative;
+  width: 320px;
+  margin: 0 auto 10px;
+}
+.form-item input {
+  padding: 15px 20px 15px 44px;
+  border-radius: 40px;
+  width: 100%;
+}
+.form-item input::-webkit-input-placeholder {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.4px;
+}
+.form-item input:-moz-placeholder {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.4px;
+}
+.form-item input::-moz-placeholder {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.4px;
+}
+.form-item input:-ms-input-placeholder {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.4px;
+}
+.form-item .icon {
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 17px;
+  top: 17px;
+  left: 20px;
+}
+.form-item .icon-name {
+  background: url("../pic/sprite.png") -97px -1px no-repeat;
+}
+.form-item .icon-phone {
+  background: url("../pic/sprite.png") -83px -1px no-repeat;
+}
+.form-item textarea {
+  width: 100%;
+  border: none;
+  background: #43434f;
+  resize: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  padding: 24px 17px 22px;
+  margin-bottom: 10px;
+  letter-spacing: 0px;
+}
+.form-item textarea::-webkit-input-placeholder {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.form-item textarea:-moz-placeholder {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.form-item textarea::-moz-placeholder {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.form-item textarea:-ms-input-placeholder {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.form-item button {
+  background: #6f72f7;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  border: none;
+  letter-spacing: 1px;
+}
+.form-item button:hover {
+  background: #3f43f4;
+  font-weight: bold;
+}
+
+footer {
+  margin-bottom: 20px;
+}
+footer h5 {
+  margin: 18px 0 11px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #43434f;
+  opacity: 0.7;
+}
+footer p {
+  margin: 0;
+  padding: 6px 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #6f72f7;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .block:first-child {
+  padding-left: 19px;
+}
+footer .block:nth-child(2) {
+  padding-left: 6px;
+}
+footer .block:nth-child(3) {
+  padding-left: 7px;
+}
+footer .block:nth-child(4) {
+  padding-left: 9px;
+}
+footer .block:nth-child(4) a {
+  color: #000;
+  font-weight: bold;
+}
+footer .block:last-child {
+  text-align: right;
+  padding-top: 22px;
+  padding-right: 12px;
+}
+footer .block:last-child a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+}
+footer .block:last-child a:hover {
+  opacity: 1;
+}
+footer .block:last-child .fb {
+  background: url("../pic/sprite.png") 0px 0px no-repeat;
+}
+footer .block:last-child .tw {
+  background: url("../pic/sprite.png") -29px 0px no-repeat;
+}
+footer .block:last-child .yt {
+  background: url("../pic/sprite.png") -59px 0px no-repeat;
+}
