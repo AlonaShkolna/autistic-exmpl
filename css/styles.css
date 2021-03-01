@@ -25,6 +25,11 @@ input:focus {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1027px) {
+  .flex-row {
+    justify-content: center;
+  }
+}
 
 .block {
   padding: 0 15px;
@@ -58,11 +63,21 @@ header {
   color: #fff;
   padding-bottom: 287px;
 }
+@media screen and (max-width: 780px) {
+  header {
+    padding-bottom: 187px;
+  }
+}
+@media screen and (max-width: 610px) {
+  header {
+    padding-bottom: 137px;
+  }
+}
 
 .top-nav {
   background: rgba(0, 0, 0, 0.15);
 }
-.top-nav h2 {
+.top-nav h1 {
   font-size: 24px;
   font-weight: 900;
   font-family: "Source Sans Pro", sans-serif;
@@ -70,8 +85,24 @@ header {
   margin: 0;
   letter-spacing: 2px;
 }
-.top-nav h2 a:hover {
+.top-nav h1 a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 780px) {
+  .top-nav h1 {
+    font-size: 18px;
+    padding: 12px 60px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .top-nav h1 {
+    padding: 12px 40px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .top-nav h1 {
+    padding: 12px 20px;
+  }
 }
 
 .menu-block {
@@ -93,11 +124,21 @@ header {
 .menu-block-item:hover a {
   text-decoration: underline;
 }
+@media screen and (max-width: 780px) {
+  .menu-block {
+    padding: 12px 64px 12px 0;
+  }
+}
+@media screen and (max-width: 610px) {
+  .menu-block {
+    padding: 12px 4 4px 12px 0;
+  }
+}
 
 .header-content {
   width: 50%;
 }
-.header-content h1 {
+.header-content h2 {
   margin: 205px 0 62px;
   text-align: center;
   font-size: 48px;
@@ -106,8 +147,25 @@ header {
   letter-spacing: 1.5px;
   line-height: 1.2;
 }
+@media screen and (max-width: 840px) {
+  .header-content h2 {
+    font-size: 36px;
+    margin: 105px 0 42px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .header-content h2 {
+    font-size: 26px;
+    margin: 65px 0 42px;
+  }
+}
 .header-content form {
   text-align: center;
+}
+@media screen and (max-width: 840px) {
+  .header-content {
+    width: 70%;
+  }
 }
 
 .header-search {
@@ -150,6 +208,11 @@ header {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.5px;
 }
+@media screen and (max-width: 780px) {
+  .header-search input {
+    padding: 16px 29px 16px 32px;
+  }
+}
 .header-search .search-button {
   position: absolute;
   border-radius: 20px;
@@ -164,26 +227,67 @@ header {
 .header-search .search-button:hover {
   background: #eee url("../pic/sprite.png") -59px -43px no-repeat;
 }
+@media screen and (max-width: 780px) {
+  .header-search {
+    width: 348px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .header-search {
+    width: 308px;
+  }
+}
 
 .search-content {
   background: #f4f4f4;
   padding: 72px 0 107px;
 }
+@media screen and (max-width: 840px) {
+  .search-content {
+    padding: 52px 0 77px;
+  }
+}
 
 .filter-block {
   padding-left: 47px;
+}
+@media screen and (max-width: 1092px) {
+  .filter-block {
+    padding-left: 27px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .filter-block {
+    padding-left: 17px;
+  }
 }
 .filter-block-data {
   background: #fff;
   border-radius: 40px;
 }
+@media screen and (max-width: 1027px) {
+  .filter-block-data {
+    margin: 0 10px 10px 0;
+  }
+}
 .filter-block-guests {
   position: relative;
+}
+@media screen and (max-width: 785px) {
+  .filter-block-guests {
+    margin: 0 10px;
+  }
 }
 .filter-block-guests input {
   padding: 14px 70px 14px 20px;
   border-radius: 40px;
   max-width: 150px;
+}
+@media screen and (max-width: 610px) {
+  .filter-block-guests input {
+    padding: 14px 40px 14px 20px;
+  }
 }
 .filter-block-guests .guests-icon {
   position: absolute;
@@ -201,12 +305,31 @@ header {
   color: #999;
   text-transform: capitalize;
 }
+@media screen and (max-width: 670px) {
+  .filter-block input, .filter-block label {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
 .filter-block input::-webkit-input-placeholder {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 400;
   font-family: "Source Sans Pro", sans-serif;
   color: #999;
+}
+@media screen and (max-width: 670px) {
+  .filter-block input::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
+@media screen and (max-width: 610px) {
+  .filter-block input::-webkit-input-placeholder {
+    text-align: center;
+  }
 }
 .filter-block input:-moz-placeholder {
   text-transform: capitalize;
@@ -215,6 +338,18 @@ header {
   font-family: "Source Sans Pro", sans-serif;
   color: #999;
 }
+@media screen and (max-width: 670px) {
+  .filter-block input:-moz-placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
+@media screen and (max-width: 610px) {
+  .filter-block input:-moz-placeholder {
+    text-align: center;
+  }
+}
 .filter-block input::-moz-placeholder {
   text-transform: capitalize;
   font-size: 14px;
@@ -222,12 +357,36 @@ header {
   font-family: "Source Sans Pro", sans-serif;
   color: #999;
 }
+@media screen and (max-width: 670px) {
+  .filter-block input::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
+@media screen and (max-width: 610px) {
+  .filter-block input::-moz-placeholder {
+    text-align: center;
+  }
+}
 .filter-block input:-ms-input-placeholder {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 400;
   font-family: "Source Sans Pro", sans-serif;
   color: #999;
+}
+@media screen and (max-width: 670px) {
+  .filter-block input:-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
+@media screen and (max-width: 610px) {
+  .filter-block input:-ms-input-placeholder {
+    text-align: center;
+  }
 }
 .filter-block button {
   border: none;
@@ -244,6 +403,11 @@ header {
 }
 .filter-block button:hover {
   background: #0b0fc2;
+}
+@media screen and (max-width: 1092px) {
+  .filter-block button {
+    margin-right: 47px;
+  }
 }
 
 .filter-data-item {
@@ -281,6 +445,12 @@ header {
   top: 17px;
   right: 25px;
 }
+@media screen and (max-width: 610px) {
+  .filter-data-item:first-child {
+    flex: 100%;
+    padding: 13px 40px;
+  }
+}
 
 .gallery-block {
   margin-top: 106px;
@@ -297,6 +467,36 @@ header {
 }
 .gallery-block figure:hover figcaption {
   opacity: 1;
+}
+@media screen and (max-width: 780px) {
+  .gallery-block figure {
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .gallery-block figure {
+    max-height: 240px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .gallery-block figure {
+    max-height: 200px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .gallery-block figure img {
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .gallery-block figure img {
+    max-height: 240px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .gallery-block figure img {
+    max-height: 200px;
+  }
 }
 .gallery-block figcaption {
   position: absolute;
@@ -325,6 +525,11 @@ header {
 .gallery-block figcaption .link-arrow:hover {
   transform: scale(1.2);
 }
+@media screen and (max-width: 780px) {
+  .gallery-block {
+    margin-top: 56px;
+  }
+}
 
 .new-offers h2 {
   margin: 124px 0 85px;
@@ -333,6 +538,30 @@ header {
   font-size: 36px;
   font-weight: 200;
   font-family: "Source Sans Pro", sans-serif;
+}
+@media screen and (max-width: 780px) {
+  .new-offers h2 {
+    margin: 84px 0 45px;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
+@media screen and (max-width: 610px) {
+  .new-offers h2 {
+    margin: 64px 0 45px;
+    font-size: 26px;
+    font-weight: 200;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
+@media screen and (max-width: 540px) {
+  .new-offers h2 {
+    margin: 44px 0 25px;
+    font-size: 22px;
+    font-weight: 200;
+    font-family: "Source Sans Pro", sans-serif;
+  }
 }
 .new-offers-tabs {
   margin-bottom: 87px;
@@ -352,6 +581,11 @@ header {
   background-color: #ccc;
   color: #fff;
 }
+@media screen and (max-width: 610px) {
+  .new-offers-tabs button {
+    padding: 10px 44px;
+  }
+}
 .new-offers-tabs .current {
   background: #6f72f7;
   color: #fff;
@@ -360,8 +594,18 @@ header {
   background: #6f72f7;
   color: #fff;
 }
+@media screen and (max-width: 780px) {
+  .new-offers-tabs {
+    margin-bottom: 47px;
+  }
+}
 .new-offers-gallery {
   padding-bottom: 144px;
+}
+@media screen and (max-width: 780px) {
+  .new-offers-gallery {
+    padding-bottom: 64px;
+  }
 }
 .new-offers .gallery-item {
   width: 50%;
@@ -373,6 +617,23 @@ header {
 .new-offers .gallery-item img {
   margin-right: 30px;
 }
+@media screen and (max-width: 780px) {
+  .new-offers .gallery-item img {
+    margin-right: 15px;
+    max-width: 180px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .new-offers .gallery-item img {
+    margin-right: 10px;
+    max-width: 140px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .new-offers .gallery-item img {
+    max-width: 120px;
+  }
+}
 .new-offers .gallery-item h6 {
   margin: 0 0 30px;
   font-size: 18px;
@@ -383,6 +644,23 @@ header {
 .new-offers .gallery-item h6:hover a {
   text-decoration: underline;
 }
+@media screen and (max-width: 780px) {
+  .new-offers .gallery-item h6 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .new-offers .gallery-item h6 {
+    font-size: 14px;
+    margin: 0 0 15px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .new-offers .gallery-item h6 {
+    font-size: 12px;
+    margin: 0 0 10px;
+  }
+}
 .new-offers .gallery-item p {
   color: #999999;
 }
@@ -391,6 +669,38 @@ header {
   padding: 5px 0;
   font-size: 24px;
   color: #f76f8d;
+}
+@media screen and (max-width: 780px) {
+  .new-offers .gallery-item .price {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .new-offers .gallery-item .price {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .new-offers .gallery-item .price {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .new-offers .gallery-item {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .new-offers .gallery-item {
+    font-size: 14px;
+    padding: 0 15px 31px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .new-offers .gallery-item {
+    font-size: 12px;
+    padding: 0 15px 11px;
+  }
 }
 
 .see-more-btn {
@@ -408,6 +718,11 @@ header {
 .see-more-btn:hover {
   background: #0b0fc2;
 }
+@media screen and (max-width: 780px) {
+  .see-more-btn {
+    padding: 17px 65px;
+  }
+}
 
 .blogs {
   padding-bottom: 150px;
@@ -419,6 +734,22 @@ header {
   font-weight: 200;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
+}
+@media screen and (max-width: 780px) {
+  .blogs h2 {
+    margin: 0 0 59px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .blogs h2 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .blogs h2 {
+    font-size: 20px;
+  }
 }
 .blogs .see-more-btn {
   margin: 71px auto 0;
@@ -444,6 +775,18 @@ header {
 .blog-post-title:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 670px) {
+  .blog-post-title {
+    font-size: 14px;
+    padding: 15px 37px 4px 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  .blog-post-title {
+    font-size: 12px;
+    padding: 15px 17px 4px 0;
+  }
+}
 .blog-post-date {
   font-weight: 400;
   color: #999;
@@ -458,6 +801,16 @@ header {
   height: 14px;
   background: url("../pic/sprite.png") -157px -1px no-repeat;
   transform: scale(1.4);
+}
+@media screen and (max-width: 670px) {
+  .blog-post-date {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .blog-post {
+    font-size: 14px;
+  }
 }
 
 .contact-us {
@@ -474,6 +827,21 @@ header {
   margin-bottom: 66px;
   letter-spacing: 1px;
   padding-left: 6px;
+}
+@media screen and (max-width: 780px) {
+  .contact-us h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .contact-us h2 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .contact-us h2 {
+    font-size: 20px;
+  }
 }
 .contact-us form {
   padding-left: 14px;
@@ -598,6 +966,16 @@ footer h5 {
   color: #43434f;
   opacity: 0.7;
 }
+@media screen and (max-width: 670px) {
+  footer h5 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 540px) {
+  footer h5 {
+    font-size: 14px;
+  }
+}
 footer p {
   margin: 0;
   padding: 6px 0;
@@ -605,6 +983,16 @@ footer p {
   font-weight: 400;
   font-family: "Source Sans Pro", sans-serif;
   color: #6f72f7;
+}
+@media screen and (max-width: 670px) {
+  footer p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 540px) {
+  footer p {
+    font-size: 12px;
+  }
 }
 footer a {
   text-decoration: none;
