@@ -468,7 +468,7 @@ header {
 .gallery-block figure:hover figcaption {
   opacity: 1;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
   .gallery-block figure {
     max-height: 300px;
   }
@@ -483,7 +483,7 @@ header {
     max-height: 200px;
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
   .gallery-block figure img {
     max-height: 300px;
   }
